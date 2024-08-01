@@ -2,9 +2,9 @@ resource "spotify_playlist" "playlist" {
   name        = "Big 3"
 
   tracks = [
-    data.spotify_search_track.name.tracks[0].id
-    data.spotify_search_track.name.tracks[1].id
-    data.spotify_search_track.name.tracks[2].id
+    data.spotify_search_track.cole.tracks[0].id,
+    data.spotify_search_track.drizzy.tracks[1].id,
+    data.spotify_search_track.dot.tracks[2].id,
   ]
 }
 
