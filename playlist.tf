@@ -3,7 +3,13 @@ resource "spotify_playlist" "playlist" {
 
   tracks = [
     data.spotify_search_track.cole.tracks[0].id,
+    data.spotify_search_track.cole.tracks[1].id,
+    data.spotify_search_track.cole.tracks[2].id,
+    data.spotify_search_track.drizzy.tracks[0].id,
     data.spotify_search_track.drizzy.tracks[1].id,
+    data.spotify_search_track.drizzy.tracks[2].id,
+    data.spotify_search_track.dot.tracks[0].id,
+    data.spotify_search_track.dot.tracks[1].id,
     data.spotify_search_track.dot.tracks[2].id,
   ]
 }
@@ -19,6 +25,6 @@ data "spotify_search_track" "drizzy" {
 }
 
 data "spotify_search_track" "dot" {
-  artist = "Kendrick"
+  artist = "Kendrick Lamar"
   limit = 10
 }
