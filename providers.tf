@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     spotify = {
-      source = "louishuyng/spotify"
-      version = "0.3.6"
+      source = "conradludgate/spotify"
+      version = "0.2.7"
     }
   }
 }
